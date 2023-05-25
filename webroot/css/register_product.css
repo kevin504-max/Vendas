@@ -1,0 +1,151 @@
+.new-product-container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+    min-height: 100%;
+}
+
+.new-product-container h1 {
+    margin-bottom: 0.5em;
+}
+
+.new-product-container p {
+    color: #7B7B7B;
+}
+
+.form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-register label {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+}
+
+.form-register input,
+.form-register select {
+    padding: 0.7em;
+    border: none;
+    border-radius: 0;
+}
+
+.form-register input::placeholder {
+    color: #7B7B7B;
+}
+
+.form-register p {
+    color: #7B7B7B;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #FFBB33;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #CCC;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.group-register {
+    display: flex;
+    /* justify-content: ; */
+}
+
+.group-addon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    font-size: 1em;
+    color: #7B7B7B;
+    font-weight: bold;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.btn-submit {
+    background-color: #222;
+    color: #FFF;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.5 ease;
+}
+
+.btn-submit:hover {
+    color: #FFBB33;
+}
+
+.btn-cancel {
+    background-color: #FFF;
+    color: #222;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.5 ease;
+}
+
+.btn-cancel:hover {
+    text-decoration: none;
+    color: #FFBB33;
+}

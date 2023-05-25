@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    background-color: #EFEFEF;
+    height: 100%;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.products-container {
+    padding: 2em;
+    margin-top: 2em;
+    min-height: 100%;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.action-btn {
+    background: #222;
+    color: #FFF;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-size: 0.8em;
+    transition: 0.5s ease-in-out;
+}
+
+.action-btn:hover {
+    color: #FFC107;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.action-btn-circle {
+    border-radius: 80%;
+    padding: 0.5em 0.7em;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social-list li {
+    margin: 0 1em;
+    transition: 0.5s ease-in-out;
+}
+
+.social-list li:hover {
+    color: #FFC107;
+    cursor: pointer;
+}
+
+.social-list li ion-icon {
+    font-size: 1.5em;
+}
+.copy-right {
+    margin-top: 2em;
+}
+
+.copy-right span {
+    font-weight: bold;
+    color: #FFBB33;
+}
+
+.tooltip-inner {
+    background-color: #2f4050;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #2f4050;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #2f4050;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #2f4050;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #2f4050;
+}
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.not-found h2 {
+    color: #222;
+    font-size: 2em;
+    padding: 1em;
+    padding-top: 8em;
+    white-space: nowrap;
+}
+
+.modal-content {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    outline: 0 none;
+    position: relative;
+}
+
+.modal-dialog {
+    z-index: 2200;
+}
+
+.modal-body {
+    padding: 20px 30px 30px 30px;
+}
+
+.inmodal .modal-body {
+    background: #f8fafb;
+}
+
+.inmodal .modal-header {
+    padding: 20px 5px;
+    text-align: center;
+    display: block;
+}
+
+.animated.modal.fade .modal-dialog {
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+.inmodal .modal-title {
+    font-size: 26px;
+}
+
+.inmodal .modal-icon {
+    font-size: 84px;
+    color: #e2e3e3;
+}
+
+.modal-footer {
+    margin-top: 0;
+}

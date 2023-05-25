@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 1em;
+}
+
+.welcome {
+    color: #FFF;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.welcome span {
+    color: #FFC107;
+}
+
+#sidebar {
+    background-color: #222;
+    padding: 1em;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar li {
+    margin-bottom: 0.5em;
+}
+
+#sidebar a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    color: #FFC107;
+}
+
+
